@@ -1,0 +1,46 @@
+{
+  "name": "react-griddle-example",
+  "version": "1.0.0",
+  "description": "Using custom components with griddle-react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --inline --progress --colors"    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlubovac/react-griddle-example.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "react-griddle",
+    "react-router",
+    "griddle-react"
+  ],
+  "author": "Muharem Lubovac",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlubovac/react-griddle-example/issues"
+  },
+  "homepage": "https://github.com/mlubovac/react-griddle-example#readme",
+  "dependencies": {
+    "axios": "^0.15.2",
+    "griddle-react": "^0.6.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "html-webpack-plugin": "^2.22.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
