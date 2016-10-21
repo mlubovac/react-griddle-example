@@ -14,7 +14,11 @@ export function formatColumns (headers) {
             "displayName": "Edit",
             "customComponent": CustomButton,
             "customComponentMetadata": {
-                "onClick": (data) => { alert(`edit handler \n\r GUID ${data}`) }
+                "onClick": (data, rowData, metadata) => { 
+                    console.log(`data`, data);
+                    console.log(`rowData`, rowData);
+                    console.log(`metadata`, metadata);                    
+                 }
             }            
         },
         {
