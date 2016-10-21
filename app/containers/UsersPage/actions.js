@@ -20,3 +20,12 @@ const getUsersSuccess = ({ headers, data }) => {
         }
     };
 }
+
+export const removeUser = (guid) => {
+    return {
+        type: "REMOVE_USER",
+        payload: {
+            guid
+        }
+    }
+}
