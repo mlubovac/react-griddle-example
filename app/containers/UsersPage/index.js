@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { getUsers } from './actions';
+import { getUsers, removeUser } from './actions';
 import UsersPage from './component';
 
 const mapStateToProps = (state = {}, ownProps) => {
@@ -12,7 +12,8 @@ const mapStateToProps = (state = {}, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        getUsers: () => dispatch(getUsers())
+        getUsers: () => dispatch(getUsers()),
+        removeUser: (guid) => dispatch(removeUser(guid))
     };
 };
 
