@@ -3,10 +3,11 @@ import CustomButton from './../../../components/CustomButton';
 /**
  * Modify headers by adding two additional objects
  */
-export const formatColumns = (headers) => {
+export function formatColumns (headers) {
     if (!Array.isArray(headers)) {
         return;
     }
+
     return headers.concat([
         {
             "columnName": "edit",
@@ -21,7 +22,8 @@ export const formatColumns = (headers) => {
             "displayName": "Delete",
             "customComponent": CustomButton,
             "customComponentMetadata": {
-                "onClick": (data) => { alert(`delete handler \n\r GUID ${data}`) }
+                // "onClick": (data) => { alert(`delete handler \n\r GUID ${data}`) }
+                "onClick": (guid) => this.removeUser(guid)                
             }                                    
         }     
     ]);
