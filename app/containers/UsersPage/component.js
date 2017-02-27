@@ -29,7 +29,9 @@ class UsersPage extends Component {
                         results={formatResults(this.props.data)} 
                         resultsPerPage={10}                   
                         tableClassName="table"
-                        useGriddleStyles={false}                         
+                        useGriddleStyles={false}
+                        isMultipleSelection={true}
+                        uniqueIdentifier={"guid"}        
                     />                    
                 }
             </div>
