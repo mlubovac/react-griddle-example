@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/mlubovac/react-griddle-example#readme",
   "dependencies": {
-    "axios": "^0.15.2",
+    "axios": "^0.19.0",
     "griddle-react": "^0.6.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
